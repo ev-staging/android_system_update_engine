@@ -193,8 +193,16 @@ cc_defaults {
         "libcrypto",
         "libfec",
         "liblz4",
+        "libselinux",
         "libziparchive",
     ],
+    product_variables: {
+        debuggable: {
+            cflags: [
+                "-DRUN_BACKUPTOOL",
+            ],
+        },
+    },
 }
 
 cc_library_static {
