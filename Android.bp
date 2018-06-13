@@ -195,6 +195,7 @@ cc_defaults {
         "liblz4",
         "libselinux",
         "libziparchive",
+        "libprocessgroup",
     ],
     product_variables: {
         debuggable: {
